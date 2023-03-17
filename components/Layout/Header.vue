@@ -20,10 +20,10 @@
                     <div class="absolute -bottom-2 w-0 h-1 bg-[#f34539] group-hover:w-full duration-200"></div>
                 </li>
             </ul>
-            <div class="w-9 flex flex-col lg:hidden">
+            <div class="w-9 flex flex-col items-end lg:hidden">
                 <div class="w-full h-1 bg-black"></div>
-                <div class="w-full h-1 bg-black my-1.5"></div>
-                <div class="w-full h-1 bg-black"></div>
+                <div class="w-3/4 h-1 bg-black my-1.5"></div>
+                <div class="w-2/4 h-1 bg-black"></div>
             </div>
         </div>
     </div>
