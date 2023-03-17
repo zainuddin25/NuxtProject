@@ -1,5 +1,5 @@
 <template>
-    <div class="w-auto bg-[#eaeff0]">
+    <div class="w-auto bg-[#f5f5f5]">
         <LayoutHeader />
         <slot/>
         <LayoutFooter/>

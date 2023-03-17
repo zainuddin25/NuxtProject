@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full fixed top-0 py-6 px-4 z-50">
+    <div class="w-full fixed top-0 py-6 px-4 z-50 bg-[#f5f5f5]">
         <div class="container mx-auto flex justify-between items-center">
             <span class="text-black text-xl lg:text-2xl" id="bold">ZaanBasyar</span>
             <ul class="gap-10 hidden lg:flex">
