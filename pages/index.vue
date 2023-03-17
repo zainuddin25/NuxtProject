@@ -19,6 +19,29 @@
             <NuxtLink class="text-xs mt-6 text-black/50" to="/service">View More</NuxtLink>
         </div>
     </div>
+    <div class="container mx-auto mt-20 px-4 lg:px-0">
+        <div class="flex justify-between items-start gap-10 flex-col-reverse lg:flex-row">
+            <div class="w-full lg:w-1/3">
+                <img src="@/assets/images/image-3.jpg" class="rounded-xl" />
+            </div>
+            <div class="w-full lg:w-2/3 flex flex-col lg:items-start text-center items-center lg:text-start">
+                <span class="text-xl" id="bold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim nostrum provident omnis unde maxime dolor accusantium nemo.</span>
+                <span class="text-xs text-black/50 my-6">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, quas alias vero optio nostrum animi cumque ab eligendi sequi pariatur temporibus illo, quidem veritatis nemo totam mollitia reprehenderit quod eum!
+                    Debitis distinctio atque dolores eligendi inventore assumenda iure in est sint voluptates animi, eius repudiandae, a numquam. Iure veniam voluptatibus libero, id incidunt sunt unde ullam quidem aliquid, sint perferendis?
+                    Qui nostrum nobis ad, dolores doloribus provident veritatis optio sit libero consectetur, eaque tempora eligendi. Quis mollitia quo nesciunt numquam autem optio exercitationem quae sit. Tenetur blanditiis iure eum possimus.
+                </span>
+                <span class="text-xs text-black/50">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis laudantium molestias unde quae porro, facilis dignissimos eos sapiente perferendis sequi debitis amet quibusdam, sint minus ratione earum cumque quas. Est.
+                    Harum ratione ex voluptatibus, modi, quasi suscipit sequi nisi doloribus accusantium adipisci neque quia aliquam recusandae rem distinctio obcaecati possimus ipsa. Sapiente officiis eum error dicta veniam cum vel esse!
+                    Officiis id earum ut sequi veritatis at nemo distinctio rerum et repellendus illo eligendi, cupiditate illum, dolor commodi animi blanditiis sint quidem doloremque facilis, tenetur laboriosam mollitia laudantium! Doloremque, itaque!
+                </span>
+                <button class="text-sm mt-6 px-4 py-2 border border-black/50 text-black/50 rounded-md">
+                    Show All Project
+                </button>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
