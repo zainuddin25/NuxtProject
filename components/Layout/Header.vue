@@ -20,11 +20,38 @@
                     <div class="absolute -bottom-2 w-0 h-1 bg-[#f34539] group-hover:w-full duration-200"></div>
                 </li>
             </ul>
-            <div class="w-9 flex flex-col items-end lg:hidden">
+            <div class="w-9 flex flex-col items-end lg:hidden cursor-pointer" @click="openMenu()">
                 <div class="w-full h-1 bg-black"></div>
                 <div class="w-3/4 h-1 bg-black my-1.5"></div>
                 <div class="w-2/4 h-1 bg-black"></div>
             </div>
+            <div :class="{'flex' : status, 'hidden' : !status}" class="fixed top-0 left-0 bg-white w-full h-full">
+                <div class="w-full h-fit relative py-6 px-4 flex justify-between items-center bg-pink-500">
+                    <span class="text-black text-xl lg:text-2xl" id="bold">ZaanBasyar</span>
+                    <div class="w-8 flex flex-col items-end lg:hidden cursor-pointer relative" @click="closeMenu()">
+                        <div class="w-full h-1 bg-black absolute top-0 rotate-45 rounded-full"></div>
+                        <div class="w-full h-1 bg-black absolute top-0 -rotate-45 rounded-full"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            status: false
+        }
+    },
+    methods: {
+        openMenu() {
+            this.status = true;
+        },
+        closeMenu() {
+            this.status = false
+        }
+    }
+}
+</script>
