@@ -5,5 +5,9 @@ export default defineNuxtConfig({
     ],
     modules: [
         '@nuxtjs/tailwindcss',
-    ]
+    ],
+    head: {
+        title: 'Nama Website Anda',
+        titleTemplate: '%s | Nama Website Anda'
+    }
 })

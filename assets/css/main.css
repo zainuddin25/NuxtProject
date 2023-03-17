@@ -2,27 +2,33 @@
     font-family: 'poppins-regular';
     src: url('/assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
     font-wight: 400;
-    font-style: normal;
 }
 
 @font-face {
     font-family: 'poppins-bold';
     src: url('/assets/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
-    font-wight: 400;
-    font-style: normal;
+    font-wight: 700;
 }
 
 @font-face {
-    font-family: 'poppins-bold';
-    src: url('/assets/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
-    font-wight: 400;
-    font-style: normal;
+    font-family: 'poppins-semibold';
+    src: url('/assets/fonts/Poppins/Poppins-SemiBold.ttf')
 }
 
 body {
   font-family: 'poppins-regular' !important;
 }
 
-#title {
+#bold {
     font-family: 'poppins-bold'
+}
+
+#semibold {
+    font-family: 'poppins-semibold'
+}
+
+#hero {
+    background-image: url('../images/background.svg');
+    background-size: cover;
+  background-position: center center;
 }
