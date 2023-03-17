@@ -19,6 +19,21 @@
                     <NuxtLink to="/news" class="text-black group-hover:text-[#f34539] duration-200" id="semibold">Contact</NuxtLink>
                     <div class="absolute -bottom-2 w-0 h-1 bg-[#f34539] group-hover:w-full duration-200"></div>
                 </li>
+                |
+                <li class="flex items-center gap-4">
+                    <NuxtLink to="/" target="_blank" class="text-black group-hover:text-[#f34539] duration-200 text-xs">
+                        <div class="flex items-center gap-1">
+                            <img src="@/assets/images/icon-phone.svg" class="w-4" />
+                            +1 234 567 890
+                        </div>
+                    </NuxtLink>
+                    <NuxtLink to="https://gmail.com" target="_blank" class="text-black group-hover:text-[#f34539] duration-200 text-xs">
+                        <div class="flex items-center gap-1">
+                            <img src="@/assets/images/icon-message.svg" class="w-4" />
+                            compeny@name.com
+                        </div>
+                    </NuxtLink>
+                </li>
             </ul>
             <div class="w-9 flex flex-col items-end lg:hidden cursor-pointer" @click="openMenu()">
                 <div class="w-full h-1 bg-black"></div>
