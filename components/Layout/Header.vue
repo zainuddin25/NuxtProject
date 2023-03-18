@@ -16,7 +16,7 @@
                     <div class="absolute -bottom-2 w-0 h-1 bg-[#f34539] group-hover:w-full duration-200"></div>
                 </li>
                 <li class="relative group">
-                    <NuxtLink to="/news" class="text-black group-hover:text-[#f34539] duration-200" id="semibold">Contact</NuxtLink>
+                    <NuxtLink to="/contact" class="text-black group-hover:text-[#f34539] duration-200" id="semibold">Contact</NuxtLink>
                     <div class="absolute -bottom-2 w-0 h-1 bg-[#f34539] group-hover:w-full duration-200"></div>
                 </li>
                 |
@@ -49,16 +49,16 @@
                     </div>
                 </div>
                 <div class="h-full px-4 flex flex-col">
-                    <NuxtLink to="/" class="pb-4">
+                    <NuxtLink to="/" class="pb-4" @click="closeMenu()">
                         Home
                     </NuxtLink>
-                    <NuxtLink to="/work" class="pb-4">
+                    <NuxtLink to="/work" class="pb-4" @click="closeMenu()">
                         Work
                     </NuxtLink>
-                    <NuxtLink to="/news" class="pb-4">
+                    <NuxtLink to="/news" class="pb-4" @click="closeMenu()">
                         News
                     </NuxtLink>
-                    <NuxtLink to="/contact" class="pb-4">
+                    <NuxtLink to="/contact" class="pb-4" @click="closeMenu()">
                         Contact
                     </NuxtLink>
                 </div>
