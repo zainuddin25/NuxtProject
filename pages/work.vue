@@ -25,10 +25,12 @@
                 </div>
                 <div class="w-full lg:w-1/4">
                     <div class="static lg:sticky top-28 right-0">
-                        <span class="text-4xl" id="bold">Lorem ipsum dolor sit amet consectetur</span>
-                        <button class="mt-4 text-sm px-4 py-2 lg:px-8 lg:py-3 border-2 rounded-md text-[#f34539] border-[#f34539] hover:bg-[#f34539] hover:text-white duration-200">
-                            Order Now
-                        </button>
+                        <div class="flex flex-col">
+                            <span class="text-4xl" id="bold">Lorem ipsum dolor sit amet consectetur</span>
+                            <button class="mt-4 text-sm px-4 py-2 lg:px-8 lg:py-3 border-2 rounded-md text-[#f34539] border-[#f34539] hover:bg-[#f34539] hover:text-white duration-200">
+                                Order Now
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
