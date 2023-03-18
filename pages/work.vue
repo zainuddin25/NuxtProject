@@ -1,6 +1,6 @@
 <template>
     <div class="pt-28">
-        <div class="container mx-auto">
+        <div class="container mx-auto px-4">
             <div class="w-fit relative mb-8">
                 <span class="text-4xl" id="bold">Our Last Project</span>
                 <div class="absolute -bottom-2 h-1.5 w-[70%] bg-[#f34539]"></div>
