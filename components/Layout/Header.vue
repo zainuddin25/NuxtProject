@@ -52,13 +52,13 @@
                     <NuxtLink to="/" class="pb-4">
                         Home
                     </NuxtLink>
-                    <NuxtLink to="/" class="pb-4">
+                    <NuxtLink to="/work" class="pb-4">
                         Work
                     </NuxtLink>
-                    <NuxtLink to="/" class="pb-4">
+                    <NuxtLink to="/news" class="pb-4">
                         News
                     </NuxtLink>
-                    <NuxtLink to="/" class="pb-4">
+                    <NuxtLink to="/contact" class="pb-4">
                         Contact
                     </NuxtLink>
                 </div>
