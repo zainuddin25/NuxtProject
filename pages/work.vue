@@ -9,8 +9,8 @@
             <div class="w-full bg-black h-1 mt-8"></div>
             <div class="flex mt-8 gap-10 flex-col lg:flex-row">
                 <div class="w-full lg:w-3/4 flex flex-col">
-                    <span class="text-2xl text-center lg:text-start" id="bold">Latest Project</span>
-                    <span class="text-sm mt-4 text-black/50 text-center lg:text-start">
+                    <span class="text-2xl text-start" id="bold">Latest Project</span>
+                    <span class="text-sm mt-4 text-black/50 text-start">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem facilis, velit error repellendus ea nihil corrupti quo quia dolore voluptates autem placeat sequi hic. Atque cumque exercitationem debitis corrupti odit.
                         Commodi consectetur vitae ipsum quisquam corporis labore cupiditate fuga in ab consequatur placeat mollitia harum quis neque inventore non amet natus rerum quaerat similique rem hic, reprehenderit laboriosam.
                     </span>

@@ -26,7 +26,7 @@
                         <span class="mt-4 text-black/50" id="bold">Marth, 20 2023</span>
                     </div>
                     <div class="w-full lg:w-1/3">
-                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas fugit a, unde iusto accusamus quam aperiam repellendus repudiandae quia ad, rerum odio temporibus quaerat dicta nesciunt delectus omnis corrupti dolorum.
+                        <span class="text-sm lg:text-base text-black/50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas fugit a, unde iusto accusamus quam aperiam repellendus repudiandae quia ad, rerum odio temporibus quaerat dicta nesciunt delectus omnis corrupti dolorum.
                         Veritatis rem tempora ex voluptates ducimus voluptas delectus eveniet repudiandae quae quod.</span>
                     </div>
                 </div>
