@@ -39,7 +39,7 @@
                 <span class="text-4xl" id="bold">What We Do</span>
                 <div class="my-6 bg-white/50 w-full h-[1px]"></div>
                 <div class="flex relative w-fit">
-                    <div v-for="(data, index) in datas" :key="index" class="w-7 flex justify-center cursor-pointer" id="number" :class="{'text-white' : index + 1 === view, 'text-white/50' : index + 1 !== view}" @click="handleClick(index + 1)">
+                    <div v-for="(data, index) in datas" :key="index" class="w-7 flex justify-center cursor-pointer" id="number" :class="{'text-white font-extrabold' : index + 1 === view, 'text-white/50 font-normal' : index + 1 !== view}" @click="handleClick(index + 1)">
                         {{ index + 1 }}
                     </div>
                     <div class="absolute -right-6 cursor-pointer" @click="handleNext">
@@ -48,7 +48,14 @@
                 </div>
                 <div class="flex flex-col mt-6">
                     <span class="text-4xl text-[#f34539]" id="bold">{{ title }}</span>
-                    <span class="mt-4 text-white/50">{{ subTitle }}</span>
+                    <span class="my-4 text-white/50">{{ subTitle }}</span>
+                    <div class="relative w-fit group mt-4">
+                        <button class="px-10 py-4 text-white" id="semibold">Go To</button>
+                        <div class="absolute top-0 left-0 w-[5px] h-[5px] bg-white group-hover:w-full duration-300"></div>
+                        <div class="absolute top-0 left-0 w-[5px] h-[5px] bg-white group-hover:h-full duration-300"></div>
+                        <div class="absolute bottom-0 right-0 w-[5px] h-[5px] bg-white group-hover:w-full duration-300"></div>
+                        <div class="absolute bottom-0 right-0 w-[5px] h-[5px] bg-white group-hover:h-full duration-300"></div>
+                    </div>
                 </div>
             </div>
             <div class="gap-6 mt-8 lg:mt-0">
@@ -59,6 +66,60 @@
                         </video>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto px-4 pt-20">
+        <p class="text-4xl text-center"  id="bold">How To Get Our Service</p>
+        <div class="grid grid-cols-1 lg:grid-cols-5 mt-20">
+            <div class="group cursor-pointer mt-6 lg:mt-0">
+                <span class="text-6xl font-bold text-black lg:text-black/50 group-hover:text-black duration-300" id="number">1</span>
+                <div class="w-full bg-black lg:bg-black/50 group-hover:bg-black h-1 mt-8 duration-300"></div>
+                <div class="flex flex-col mt-4 pr-6">
+                    <span class="text-lg text-black lg:text-black/50 group-hover:text-black duration-300" id="bold">Lorem ipsum</span>
+                    <span class="text-sm mt-4 text-black/50 lg:text-black/20 group-hover:text-black/50 duration-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor et consequuntur architecto, ipsa, expedita fuga iste nihil temporibus, quaerat tempora laudantium dignissimos dolores aperiam reprehenderit repudiandae aut doloremque porro inventore!</span>
+                </div>
+            </div>
+            <div class="group cursor-pointer mt-6 lg:mt-0">
+                <span class="text-6xl font-bold text-black lg:text-black/50 group-hover:text-black duration-300" id="number">2</span>
+                <div class="w-full bg-black lg:bg-black/50 group-hover:bg-black h-1 mt-8 duration-300"></div>
+                <div class="flex flex-col mt-4 pr-6">
+                    <span class="text-lg text-black lg:text-black/50 group-hover:text-black duration-300" id="bold">Lorem ipsum</span>
+                    <span class="text-sm mt-4 text-black/50 lg:text-black/20 group-hover:text-black/50 duration-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor et consequuntur architecto, ipsa, expedita fuga iste nihil temporibus, quaerat tempora laudantium dignissimos dolores aperiam reprehenderit repudiandae aut doloremque porro inventore!</span>
+                </div>
+            </div>
+            <div class="group cursor-pointer mt-6 lg:mt-0">
+                <span class="text-6xl font-bold text-black lg:text-black/50 group-hover:text-black duration-300" id="number">3</span>
+                <div class="w-full bg-black lg:bg-black/50 group-hover:bg-black h-1 mt-8 duration-300"></div>
+                <div class="flex flex-col mt-4 pr-6">
+                    <span class="text-lg text-black lg:text-black/50 group-hover:text-black duration-300" id="bold">Lorem ipsum</span>
+                    <span class="text-sm mt-4 text-black/50 lg:text-black/20 group-hover:text-black/50 duration-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor et consequuntur architecto, ipsa, expedita fuga iste nihil temporibus, quaerat tempora laudantium dignissimos dolores aperiam reprehenderit repudiandae aut doloremque porro inventore!</span>
+                </div>
+            </div>
+            <div class="group cursor-pointer mt-6 lg:mt-0">
+                <span class="text-6xl font-bold text-black lg:text-black/50 group-hover:text-black duration-300" id="number">4</span>
+                <div class="w-full bg-black lg:bg-black/50 group-hover:bg-black h-1 mt-8 duration-300"></div>
+                <div class="flex flex-col mt-4 pr-6">
+                    <span class="text-lg text-black lg:text-black/50 group-hover:text-black duration-300" id="bold">Lorem ipsum</span>
+                    <span class="text-sm mt-4 text-black/50 lg:text-black/20 group-hover:text-black/50 duration-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor et consequuntur architecto, ipsa, expedita fuga iste nihil temporibus, quaerat tempora laudantium dignissimos dolores aperiam reprehenderit repudiandae aut doloremque porro inventore!</span>
+                </div>
+            </div>
+            <div class="group cursor-pointer mt-6 lg:mt-0">
+                <span class="text-6xl font-bold text-black lg:text-black/50 group-hover:text-black duration-300" id="number">5</span>
+                <div class="w-full bg-black lg:bg-black/50 group-hover:bg-black h-1 mt-8 duration-300"></div>
+                <div class="flex flex-col mt-4 pr-6">
+                    <span class="text-lg text-black lg:text-black/50 group-hover:text-black duration-300" id="bold">Lorem ipsum</span>
+                    <span class="text-sm mt-4 text-black/50 lg:text-black/20 group-hover:text-black/50 duration-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor et consequuntur architecto, ipsa, expedita fuga iste nihil temporibus, quaerat tempora laudantium dignissimos dolores aperiam reprehenderit repudiandae aut doloremque porro inventore!</span>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <div class="relative w-fit group mt-8">
+                <button class="px-10 py-4 text-[#f34539]" id="semibold">Go To</button>
+                <div class="absolute top-0 left-0 w-[5px] h-[5px] bg-[#f34539] group-hover:w-full duration-300"></div>
+                    <div class="absolute top-0 left-0 w-[5px] h-[5px] bg-[#f34539] group-hover:h-full duration-300"></div>
+                    <div class="absolute bottom-0 right-0 w-[5px] h-[5px] bg-[#f34539] group-hover:w-full duration-300"></div>
+                    <div class="absolute bottom-0 right-0 w-[5px] h-[5px] bg-[#f34539] group-hover:h-full duration-300"></div>
             </div>
         </div>
     </div>
