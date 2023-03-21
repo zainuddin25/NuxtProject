@@ -34,8 +34,8 @@
         </div>
     </div>
     <div class="w-full bg-black">
-        <div class="container mx-auto text-white px-4 py-8 flex justify-between">
-            <div class="w-2/4">
+        <div class="container mx-auto text-white px-4 py-20 flex justify-between flex-col lg:flex-row">
+            <div class="w-full lg:w-2/4">
                 <span class="text-4xl" id="bold">What We Do</span>
                 <div class="my-6 bg-white/50 w-full h-[1px]"></div>
                 <div class="flex relative w-fit">
@@ -51,7 +51,7 @@
                     <span class="mt-4 text-white/50">{{ subTitle }}</span>
                 </div>
             </div>
-            <div class="gap-6">
+            <div class="gap-6 mt-8 lg:mt-0">
                 <div class="flex items-center gap-4">
                     <div class="w-fit relative">
                         <video autoplay loop class="shadow-2xl lg:w-[700px] w-full" ref="videoPlayer" muted>
