@@ -1,91 +1,155 @@
+<style scoped>
+
+@keyframes blink {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+</style>
+
 <template>
-    <div class="w-full h-screen flex items-center relative px-4" id="hero">
-        <div class="container mx-auto flex justify-between items-center">
-            <div class="w-full lg:w-2/4 flex flex-col items-start">
-                <span class="text-sm text-[#f34539] lg:text-base" id="semibold">Lorem ipsum dolor sit, amet consectetur adipisicing elit</span>
-                <span class="my-4 text-2xl lg:text-4xl uppercase" id="bold">Lorem ipsum dolor sit amet <span class="text-[#f34539]">consectetur adipisicing</span> elit. Officiis quasi quas nihil</span>
-                <span class="lg:text-sm text-black/50 text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, quos. Tempora vel ipsum officia quos temporibus consequuntur reiciendis dolores, explicabo voluptate sunt at, cumque cupiditate illum possimus facere dicta velit! Amet omnis rem assumenda ea, sed velit laudantium officia eos error officiis minus quidem, aliquam accusamus inventore asperiores blanditiis possimus totam, fugit aliquid placeat qui. Tenetur nemo excepturi recusandae reiciendis.</span>
-                <button class="mt-4 text-sm px-4 py-2 lg:px-8 lg:py-3 border-2 rounded-md text-[#f34539] border-[#f34539] hover:bg-[#f34539] hover:text-white duration-200">
-                    Contact Now
-                </button>
+    <div class="container mx-auto lg:px-4 px-0">
+        <div class="w-full h-screen flex justify-between lg:justify-center items-center gap-10 flex-col-reverse lg:flex-row">
+            <div class="w-full lg:w-1/3 flex items-center justify-end h-80 lg:h-full overflow-hidden pr-0 lg:pr-10">
+                <div class="w-fit relative">
+                    <video autoplay muted loop class="border-0 lg:border-[16px] border-white lg:rounded-3xl shadow-2xl lg:w-[300px] w-full">
+                        <source src="@/assets/videos/hero-video.mp4" type="video/mp4"> 
+                    </video>
+                    <div class="hidden lg:flex absolute -top-4 -left-4 h-5 w-5 border-t-2 border-l-2 rounded-tl-3xl border-gray-300"></div>
+                    <div class="hidden lg:flex absolute -top-4 -right-4 h-5 w-5 border-t-2 border-r-2 rounded-tr-3xl border-gray-300"></div>
+                    <div class="hidden lg:flex absolute -bottom-4 -left-4 h-5 w-5 border-b-2 border-l-2 rounded-bl-3xl border-gray-300"></div>
+                    <div class="hidden lg:flex absolute -bottom-4 -right-4 h-5 w-5 border-b-2 border-r-2 rounded-br-3xl border-gray-300"></div>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/3 flex flex-col pt-28 lg:pt-0 px-4 lg:px-0">
+                <span id="bold">Hallo Welcome To The <span class="text-[#f34539]">ZaanBasyar</span></span>
+                <Typewriter class="py-4 lg:py-8" />
+                <div class="relative w-fit group">
+                    <button class="px-10 py-4 text-[#f34539]" id="semibold">Lets Talk</button>
+                    <div class="absolute top-0 left-0 w-[5px] h-[5px] bg-[#f34539] group-hover:w-full duration-300"></div>
+                    <div class="absolute top-0 left-0 w-[5px] h-[5px] bg-[#f34539] group-hover:h-full duration-300"></div>
+                    <div class="absolute bottom-0 right-0 w-[5px] h-[5px] bg-[#f34539] group-hover:w-full duration-300"></div>
+                    <div class="absolute bottom-0 right-0 w-[5px] h-[5px] bg-[#f34539] group-hover:h-full duration-300"></div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container mx-auto grid grid-cols-1 xl:grid-cols-4 my-6 gap-y-6">
-        <div class="w-full flex flex-col items-center mt-10" v-for="(items, index) in service" :key="index">
-            <img src="@/assets/images/icon-turbine.svg" class="w-16" alt="icon" />
-            <span class="mt-8 text-2xl text-[#f34539]" id="bold">{{ items.title }}</span>
-            <span class="w-[80%] mx-auto text-xs text-center mt-4 text-black/50">{{ items.subtitle }}</span>
-            <NuxtLink class="text-xs mt-6 text-black/50" to="/service">View More</NuxtLink>
-        </div>
-    </div>
-    <div class="container mx-auto mt-20 px-4 lg:px-0">
-        <div class="flex justify-between items-start gap-10 flex-col-reverse lg:flex-row">
-            <div class="w-full lg:w-1/3">
-                <img src="@/assets/images/image-3.jpg" class="rounded-xl" />
+    <div class="w-full bg-black">
+        <div class="container mx-auto text-white px-4 py-8 flex justify-between">
+            <div class="w-2/4">
+                <span class="text-4xl" id="bold">What We Do</span>
+                <div class="my-6 bg-white/50 w-full h-[1px]"></div>
+                <div class="flex relative w-fit">
+                    <div v-for="(data, index) in datas" :key="index" class="w-7 flex justify-center cursor-pointer" id="number" :class="{'text-white' : index + 1 === view, 'text-white/50' : index + 1 !== view}" @click="handleClick(index + 1)">
+                        {{ index + 1 }}
+                    </div>
+                    <div class="absolute -right-6 cursor-pointer" @click="handleNext">
+                        <img src="@/assets/images/icon-arrow.svg" />
+                    </div>
+                </div>
+                <div class="flex flex-col mt-6">
+                    <span class="text-4xl text-[#f34539]" id="bold">{{ title }}</span>
+                    <span class="mt-4 text-white/50">{{ subTitle }}</span>
+                </div>
             </div>
-            <div class="w-full lg:w-2/3 flex flex-col lg:items-start text-center items-center lg:text-start">
-                <span class="text-xl" id="bold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim nostrum provident omnis unde maxime dolor accusantium nemo.</span>
-                <span class="text-xs text-black/50 my-6">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, quas alias vero optio nostrum animi cumque ab eligendi sequi pariatur temporibus illo, quidem veritatis nemo totam mollitia reprehenderit quod eum!
-                    Debitis distinctio atque dolores eligendi inventore assumenda iure in est sint voluptates animi, eius repudiandae, a numquam. Iure veniam voluptatibus libero, id incidunt sunt unde ullam quidem aliquid, sint perferendis?
-                    Qui nostrum nobis ad, dolores doloribus provident veritatis optio sit libero consectetur, eaque tempora eligendi. Quis mollitia quo nesciunt numquam autem optio exercitationem quae sit. Tenetur blanditiis iure eum possimus.
-                </span>
-                <span class="text-xs text-black/50">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis laudantium molestias unde quae porro, facilis dignissimos eos sapiente perferendis sequi debitis amet quibusdam, sint minus ratione earum cumque quas. Est.
-                    Harum ratione ex voluptatibus, modi, quasi suscipit sequi nisi doloribus accusantium adipisci neque quia aliquam recusandae rem distinctio obcaecati possimus ipsa. Sapiente officiis eum error dicta veniam cum vel esse!
-                    Officiis id earum ut sequi veritatis at nemo distinctio rerum et repellendus illo eligendi, cupiditate illum, dolor commodi animi blanditiis sint quidem doloremque facilis, tenetur laboriosam mollitia laudantium! Doloremque, itaque!
-                </span>
-                <button class="text-sm mt-6 px-4 py-2 border border-black/50 text-black/50 rounded-md">
-                    Show All Project
-                </button>
+            <div class="gap-6">
+                <div class="flex items-center gap-4">
+                    <div class="w-fit relative">
+                        <video autoplay loop class="shadow-2xl lg:w-[700px] w-full" ref="videoPlayer" muted>
+                            <source :src="video" type="video/mp4"> 
+                        </video>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </template>
 
 <script>
-    export default {
-        data() {
-            return {
-                service: [ 
-                    {
-                        img: '@/assets/images/icon-turbine.svg',
-                        title: '2D Modeling',
-                        subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nesciunt consequuntur delectus laboriosam nam earum, dignissimos, enim culpa dolor beatae repellat sit aperiam ad mollitia sint a. Et, culpa doloremque?'
-                    },
-                    {
-                        img: '@/assets/images/icon-turbine.svg',
-                        title: '3D Modeling',
-                        subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nesciunt consequuntur delectus laboriosam nam earum, dignissimos, enim culpa dolor beatae repellat sit aperiam ad mollitia sint a. Et, culpa doloremque?'
-                    },
-                    {
-                        img: '@/assets/images/icon-turbine.svg',
-                        title: 'Character  Modeling',
-                        subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nesciunt consequuntur delectus laboriosam nam earum, dignissimos, enim culpa dolor beatae repellat sit aperiam ad mollitia sint a. Et, culpa doloremque?'
-                    },
-                    {
-                        img: '@/assets/images/icon-turbine.svg',
-                        title: 'Environmental  Modeling',
-                        subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nesciunt consequuntur delectus laboriosam nam earum, dignissimos, enim culpa dolor beatae repellat sit aperiam ad mollitia sint a. Et, culpa doloremque?'
-                    },
-                    {
-                        img: '@/assets/images/icon-turbine.svg',
-                        title: 'Animation',
-                        subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nesciunt consequuntur delectus laboriosam nam earum, dignissimos, enim culpa dolor beatae repellat sit aperiam ad mollitia sint a. Et, culpa doloremque?'
-                    },
-                    {
-                        img: '@/assets/images/icon-turbine.svg',
-                        title: 'Cover Art',
-                        subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nesciunt consequuntur delectus laboriosam nam earum, dignissimos, enim culpa dolor beatae repellat sit aperiam ad mollitia sint a. Et, culpa doloremque?'
-                    },
-                    {
-                        img: '@/assets/images/icon-turbine.svg',
-                        title: 'More',
-                        subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nesciunt consequuntur delectus laboriosam nam earum, dignissimos, enim culpa dolor beatae repellat sit aperiam ad mollitia sint a. Et, culpa doloremque?'
-                    },
-                ]
-            }
+export default ({
+    data() {
+        return {
+            default: 1,
+            view: 1,
+            video: `/_nuxt/assets/videos/cinematik-1.mp4`,
+            secondVideo: '/_nuxt/assets/videos/cinematik-2.mp4',
+            datas: [
+                {
+                    id: 1,
+                    title: "Hallo World 1",
+                    subTitle: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum eum nobis molestias, distinctio expedita facilis iusto voluptas, optio nesciunt dolores debitis. Voluptates sapiente quidem nemo rerum illum perferendis, veniam provident?",
+                    videoPath: "/_nuxt/assets/videos/cinematik-1.mp4"
+                },
+                {
+                    id: 2,
+                    title: "Hallo World 2",
+                    subTitle: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae voluptatem ducimus dignissimos? In fugiat maxime laborum id ipsam! At sint dicta hic minima provident dolor quia inventore asperiores magni voluptatem.",
+                    videoPath: "/_nuxt/assets/videos/cinematik-2.mp4"
+                },
+                {
+                    id: 3,
+                    title: "Hallo World 3",
+                    subTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptate, incidunt est quae veritatis odit iure non aliquid cupiditate quas autem ut consequatur quis corrupti. Harum earum quaerat deserunt eligendi.",
+                    videoPath: "/_nuxt/assets/videos/cinematik-3.mp4"
+                },
+                {
+                    id: 4,
+                    title: "Hallo World 4",
+                    subTitle: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolorum dolor dolore ut veritatis, pariatur consequuntur minima illum dolorem, consequatur repellat iste soluta alias quo aliquam tempore nisi eos autem.",
+                    videoPath: "/_nuxt/assets/videos/cinematik-4.mp4"
+                },
+                {
+                    id: 5,
+                    title: "Hallo World 5",
+                    subTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias aperiam ipsum ut sapiente, nemo quae cum quod natus perspiciatis ipsa neque omnis recusandae accusantium maxime aut necessitatibus iure modi hic.",
+                    videoPath: "/_nuxt/assets/videos/cinematik-1.mp4"
+                },
+                {
+                    id: 6,
+                    title: "Hallo World 6",
+                    subTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, nostrum! Totam, perspiciatis laudantium esse sit culpa corporis porro accusantium. Cum consectetur tenetur tempore atque reprehenderit consequatur nesciunt unde architecto non.",
+                    videoPath: "/_nuxt/assets/videos/cinematik-2.mp4"
+                },
+                {
+                    id: 7,
+                    title: "Hallo World 7",
+                    subTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque doloribus, sunt nobis iusto vero blanditiis deleniti impedit. Dicta, culpa, laborum voluptas dolorum molestias accusantium repellat quo dolor cupiditate fugit eos.",
+                    videoPath: "/_nuxt/assets/videos/cinematik-3.mp4"
+                },
+                {
+                    id: 8,
+                    title: "Hallo World 8",
+                    subTitle: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, delectus odit dolorum velit voluptatum deleniti non itaque eius mollitia accusantium, odio molestiae quisquam illo maxime? Facilis, voluptas consectetur. Eius, amet?",
+                    videoPath: "/_nuxt/assets/videos/cinematik-4.mp4"
+                },
+            ],
+            title: 'Hallo World 1',
+            subTitle: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum eum nobis molestias, distinctio expedita facilis iusto voluptas, optio nesciunt dolores debitis. Voluptates sapiente quidem nemo rerum illum perferendis, veniam provident?',
         }
-    }
+    },
+    methods: {
+        handleClick(number) {
+            this.view = number
+            this.title = this.objectById.title 
+            this.subTitle = this.objectById.subTitle
+            this.video = this.objectById.videoPath
+            this.$refs.videoPlayer.load();
+        },
+        handleNext() {
+            this.view = this.view + 1
+            this.objectById
+            if (this.view >= this.datas.length) {
+                this.view = this.datas.length
+            }
+            this.title = this.objectById.title
+            this.subTitle = this.objectById.subTitle
+            this.video = this.objectById.videoPath
+            this.$refs.videoPlayer.load();
+        },
+    },
+    computed: {
+        objectById() {
+            return this.datas.find(item => item.id === this.view);
+        }
+    },
+})
 </script>

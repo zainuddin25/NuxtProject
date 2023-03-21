@@ -15,6 +15,16 @@
     src: url('/assets/fonts/Poppins/Poppins-SemiBold.ttf')
 }
 
+@font-face {
+    font-family: 'poppins-extrabold';
+    src: url('/assets/fonts/Poppins/Poppins-ExtraBold.ttf')
+}
+
+@font-face {
+    font-family: 'inter-normal';
+    src: url('/assets/fonts/Inter/static/Inter-Medium.ttf')
+}
+
 body {
   font-family: 'poppins-regular' !important;
 }
@@ -25,6 +35,14 @@ body {
 
 #semibold {
     font-family: 'poppins-semibold'
+}
+
+#extrabold {
+    font-family: 'poppins-extrabold'
+}
+
+#number {
+    font-family: 'inter-normal' !important
 }
 
 #hero {

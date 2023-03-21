@@ -1,6 +1,6 @@
 <template>
-    <div class="w-full bg-black mt-20">
-        <div class="container mx-auto grid grid-cols-1 lg:grid-cols-4 gap-10 text-[#f5f5f5] py-10 px-4">
+    <div class="w-full bg-black mt-20 px-4">
+        <div class="container mx-auto grid grid-cols-1 lg:grid-cols-4 gap-10 text-[#f5f5f5] py-10">
             <div class="w-full flex flex-col">
                 <span class="text-lg" id="bold">LOREM IPSUM DOLOR SIT AMET <span class="text-[#f34539]">CONSECTETUR ADIPISICING</span> ELIT. OFFICIIS QUASI QUAS NIHIL</span>
                 <span class="mt-4 text-xs text-[#f5f5f5]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias natus facere dignissimos veritatis amet quisquam nihil magni accusamus! Earum quidem, saepe quia libero cum nisi sequi neque illo reiciendis sint?</span>
