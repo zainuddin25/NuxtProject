@@ -9,7 +9,7 @@
 <template>
     <div class="container mx-auto lg:px-4 px-0">
         <div class="w-full h-screen flex justify-between lg:justify-center items-center gap-10 flex-col-reverse lg:flex-row">
-            <div class="w-full lg:w-1/3 flex items-center justify-end h-80 lg:h-full overflow-hidden pr-0 lg:pr-10">
+            <div class="w-full lg:w-1/3 flex items-center justify-end h-[600px] lg:h-full overflow-hidden pr-0 lg:pr-10">
                 <div class="w-fit relative">
                     <video autoplay muted loop class="border-0 lg:border-[16px] border-white lg:rounded-3xl shadow-2xl lg:w-[300px] w-full">
                         <source src="@/assets/videos/hero-video.mp4" type="video/mp4"> 
