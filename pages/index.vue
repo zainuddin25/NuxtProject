@@ -69,57 +69,75 @@
             </div>
         </div>
     </div>
-    <div class="container mx-auto px-4 pt-20">
+    <div class="container mx-auto px-4 pt-28">
         <p class="text-4xl text-center"  id="bold">How To Get Our Service</p>
-        <div class="grid grid-cols-1 lg:grid-cols-5 mt-20">
+        <div class="grid grid-cols-1 lg:grid-cols-5 my-20">
             <div class="group cursor-pointer mt-6 lg:mt-0">
                 <span class="text-6xl font-bold text-black lg:text-black/50 group-hover:text-black duration-300" id="number">1</span>
-                <div class="w-full bg-black lg:bg-black/50 group-hover:bg-black h-1 mt-8 duration-300"></div>
+                <div class="w-full bg-black lg:bg-black/50 group-hover:bg-black h-0.5 mt-4 duration-300"></div>
                 <div class="flex flex-col mt-4 pr-6">
                     <span class="text-lg text-black lg:text-black/50 group-hover:text-black duration-300" id="bold">Lorem ipsum</span>
-                    <span class="text-sm mt-4 text-black/50 lg:text-black/20 group-hover:text-black/50 duration-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor et consequuntur architecto, ipsa, expedita fuga iste nihil temporibus, quaerat tempora laudantium dignissimos dolores aperiam reprehenderit repudiandae aut doloremque porro inventore!</span>
+                    <span class="text-sm mt-4 text-black/50 lg:text-black/50 group-hover:text-black duration-300" id="semibold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor et</span>
                 </div>
             </div>
             <div class="group cursor-pointer mt-6 lg:mt-0">
                 <span class="text-6xl font-bold text-black lg:text-black/50 group-hover:text-black duration-300" id="number">2</span>
-                <div class="w-full bg-black lg:bg-black/50 group-hover:bg-black h-1 mt-8 duration-300"></div>
+                <div class="w-full bg-black lg:bg-black/50 group-hover:bg-black h-0.5 mt-4 duration-300"></div>
                 <div class="flex flex-col mt-4 pr-6">
                     <span class="text-lg text-black lg:text-black/50 group-hover:text-black duration-300" id="bold">Lorem ipsum</span>
-                    <span class="text-sm mt-4 text-black/50 lg:text-black/20 group-hover:text-black/50 duration-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor et consequuntur architecto, ipsa, expedita fuga iste nihil temporibus, quaerat tempora laudantium dignissimos dolores aperiam reprehenderit repudiandae aut doloremque porro inventore!</span>
+                    <span class="text-sm mt-4 text-black/50 lg:text-black/50 group-hover:text-black duration-300" id="semibold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor et</span>
                 </div>
             </div>
             <div class="group cursor-pointer mt-6 lg:mt-0">
                 <span class="text-6xl font-bold text-black lg:text-black/50 group-hover:text-black duration-300" id="number">3</span>
-                <div class="w-full bg-black lg:bg-black/50 group-hover:bg-black h-1 mt-8 duration-300"></div>
+                <div class="w-full bg-black lg:bg-black/50 group-hover:bg-black h-0.5 mt-4 duration-300"></div>
                 <div class="flex flex-col mt-4 pr-6">
                     <span class="text-lg text-black lg:text-black/50 group-hover:text-black duration-300" id="bold">Lorem ipsum</span>
-                    <span class="text-sm mt-4 text-black/50 lg:text-black/20 group-hover:text-black/50 duration-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor et consequuntur architecto, ipsa, expedita fuga iste nihil temporibus, quaerat tempora laudantium dignissimos dolores aperiam reprehenderit repudiandae aut doloremque porro inventore!</span>
+                    <span class="text-sm mt-4 text-black/50 lg:text-black/50 group-hover:text-black duration-300" id="semibold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor et</span>
                 </div>
             </div>
             <div class="group cursor-pointer mt-6 lg:mt-0">
                 <span class="text-6xl font-bold text-black lg:text-black/50 group-hover:text-black duration-300" id="number">4</span>
-                <div class="w-full bg-black lg:bg-black/50 group-hover:bg-black h-1 mt-8 duration-300"></div>
+                <div class="w-full bg-black lg:bg-black/50 group-hover:bg-black h-0.5 mt-4 duration-300"></div>
                 <div class="flex flex-col mt-4 pr-6">
                     <span class="text-lg text-black lg:text-black/50 group-hover:text-black duration-300" id="bold">Lorem ipsum</span>
-                    <span class="text-sm mt-4 text-black/50 lg:text-black/20 group-hover:text-black/50 duration-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor et consequuntur architecto, ipsa, expedita fuga iste nihil temporibus, quaerat tempora laudantium dignissimos dolores aperiam reprehenderit repudiandae aut doloremque porro inventore!</span>
+                    <span class="text-sm mt-4 text-black/50 lg:text-black/50 group-hover:text-black duration-300" id="semibold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor et</span>
                 </div>
             </div>
             <div class="group cursor-pointer mt-6 lg:mt-0">
                 <span class="text-6xl font-bold text-black lg:text-black/50 group-hover:text-black duration-300" id="number">5</span>
-                <div class="w-full bg-black lg:bg-black/50 group-hover:bg-black h-1 mt-8 duration-300"></div>
+                <div class="w-full bg-black lg:bg-black/50 group-hover:bg-black h-0.5 mt-4 duration-300"></div>
                 <div class="flex flex-col mt-4 pr-6">
                     <span class="text-lg text-black lg:text-black/50 group-hover:text-black duration-300" id="bold">Lorem ipsum</span>
-                    <span class="text-sm mt-4 text-black/50 lg:text-black/20 group-hover:text-black/50 duration-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor et consequuntur architecto, ipsa, expedita fuga iste nihil temporibus, quaerat tempora laudantium dignissimos dolores aperiam reprehenderit repudiandae aut doloremque porro inventore!</span>
+                    <span class="text-sm mt-4 text-black/50 lg:text-black/50 group-hover:text-black duration-300" id="semibold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor et</span>
                 </div>
             </div>
         </div>
-        <div class="flex justify-center">
-            <div class="relative w-fit group mt-8">
-                <button class="px-10 py-4 text-[#f34539]" id="semibold">Go To</button>
-                <div class="absolute top-0 left-0 w-[5px] h-[5px] bg-[#f34539] group-hover:w-full duration-300"></div>
-                    <div class="absolute top-0 left-0 w-[5px] h-[5px] bg-[#f34539] group-hover:h-full duration-300"></div>
-                    <div class="absolute bottom-0 right-0 w-[5px] h-[5px] bg-[#f34539] group-hover:w-full duration-300"></div>
-                    <div class="absolute bottom-0 right-0 w-[5px] h-[5px] bg-[#f34539] group-hover:h-full duration-300"></div>
+    </div>
+    <div class="pt-28 px-4 container mx-auto">
+        <div class="flex justify-between gap-10">
+            <div class="w-2/4">
+                <p class="text-4xl"  id="bold">Our Partner</p>
+                <div class="w-full bg-black h-0.5 my-4"></div>
+                <div class="overflow-y-auto h-96 w-full">
+                    <div class="w-full py-3 relative cursor-pointer" v-for="(dataPartner, index) in partner" :key="index" @click="handleChangePartner(index + 1)">
+                        <div class="flex justify-between items-center">
+                            <span :class="{ 'semibold' : index + 1 == partnerView, '' : index + 1 != partnerView }">{{ dataPartner.title }}</span>
+                            <img src="@/assets/images/icon-arrow-black.svg" :class="{ 'block' : index + 1 == partnerView, 'hidden' : index + 1 != partnerView }" />
+                        </div>
+                        <div class="w-full h-0.5 bg-black absolute bottom-0" :class="{ 'block' : index + 1 == partnerView, 'hidden' : index + 1 != partnerView }"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-2/4">
+                <p class="text-4xl" id="bold">Their Comments</p>
+                <div class="w-full bg-black h-0.5 my-4"></div>
+                <div class="overflow-y-auto h-96 w-full text-sm flex flex-col">
+                    <span>
+                        {{ comentar }}
+                    </span>
+                    <span class="text-black/50 mt-4" id="bold">{{ date }}</span>
+                </div>
             </div>
         </div>
     </div>
@@ -131,6 +149,7 @@ export default ({
         return {
             default: 1,
             view: 1,
+            partnerView: 1,
             video: `/_nuxt/assets/videos/cinematik-1.mp4`,
             secondVideo: '/_nuxt/assets/videos/cinematik-2.mp4',
             datas: [
@@ -185,6 +204,22 @@ export default ({
             ],
             title: 'Hallo World 1',
             subTitle: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum eum nobis molestias, distinctio expedita facilis iusto voluptas, optio nesciunt dolores debitis. Voluptates sapiente quidem nemo rerum illum perferendis, veniam provident?',
+            partner: [
+                {
+                    id: 1,
+                    title: 'Partner Name',
+                    commentar: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.  Ad, facere. Nulla hic magni nam adipisci accusamus optio sed quia impedit distinctio provident, quae autem non officia esse vel incidunt harum?',
+                    date: '23 Marth 2023'
+                },
+                {
+                    id: 2,
+                    title: 'Partner Name',
+                    commentar: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
+                    date: '24 Marth 2023'
+                },
+            ],
+            comentar: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, facere. Nulla hic magni nam adipisci accusamus optio sed quia impedit distinctio provident, quae autem non officia esse vel incidunt harum?',
+            date: '23 Marth 2023'
         }
     },
     methods: {
@@ -206,11 +241,22 @@ export default ({
             this.video = this.objectById.videoPath
             this.$refs.videoPlayer.load();
         },
+        handleChangePartner(number) {
+            this.partnerView = number
+            this.comentar = this.partnerById.commentar,
+            this.date = this.partnerById.date
+        }
     },
     computed: {
         objectById() {
             return this.datas.find(item => item.id === this.view);
+        },
+        partnerById() {
+            return this.partner.find(item => item.id === this.partnerView);
         }
     },
+    mounted() {
+        console.log(this.partner.find(item => item.id === this.partnerView), "ini adalah")
+    }
 })
 </script>
