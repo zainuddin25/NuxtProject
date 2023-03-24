@@ -61,7 +61,7 @@
             <div class="gap-6 mt-8 lg:mt-0 hidden lg:block">
                 <div class="flex items-center gap-4">
                     <div class="w-fit relative">
-                        <video autoplay muted loop class="border-0 lg:border-[16px] border-white lg:rounded-3xl shadow-2xl lg:w-[300px] w-full rounded-none">
+                        <video autoplay loop class="shadow-2xl lg:w-[700px] w-full" ref="videoPlayer" muted>
                             <source :src="video" type="video/mp4"> 
                         </video>
                     </div>
@@ -208,56 +208,56 @@ export default ({
             default: 1,
             view: 1,
             partnerView: 1,
-            video: `/assets/videos/cinematik-1.mp4`,
+            video: `/_nuxt/assets/videos/cinematik-1.mp4`,
             secondVideo: '/_nuxt/assets/videos/cinematik-2.mp4',
             datas: [
                 {
                     id: 1,
                     title: "Hallo World 1",
                     subTitle: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum eum nobis molestias, distinctio expedita facilis iusto voluptas, optio nesciunt dolores debitis. Voluptates sapiente quidem nemo rerum illum perferendis, veniam provident?",
-                    videoPath: "/assets/videos/cinematik-1.mp4"
+                    videoPath: "/_nuxt/assets/videos/cinematik-1.mp4"
                 },
                 {
                     id: 2,
                     title: "Hallo World 2",
                     subTitle: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae voluptatem ducimus dignissimos? In fugiat maxime laborum id ipsam! At sint dicta hic minima provident dolor quia inventore asperiores magni voluptatem.",
-                    videoPath: "/assets/videos/cinematik-2.mp4"
+                    videoPath: "/_nuxt/assets/videos/cinematik-2.mp4"
                 },
                 {
                     id: 3,
                     title: "Hallo World 3",
                     subTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptate, incidunt est quae veritatis odit iure non aliquid cupiditate quas autem ut consequatur quis corrupti. Harum earum quaerat deserunt eligendi.",
-                    videoPath: "/assets/videos/cinematik-3.mp4"
+                    videoPath: "/_nuxt/assets/videos/cinematik-3.mp4"
                 },
                 {
                     id: 4,
                     title: "Hallo World 4",
                     subTitle: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolorum dolor dolore ut veritatis, pariatur consequuntur minima illum dolorem, consequatur repellat iste soluta alias quo aliquam tempore nisi eos autem.",
-                    videoPath: "/assets/videos/cinematik-4.mp4"
+                    videoPath: "/_nuxt/assets/videos/cinematik-4.mp4"
                 },
                 {
                     id: 5,
                     title: "Hallo World 5",
                     subTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias aperiam ipsum ut sapiente, nemo quae cum quod natus perspiciatis ipsa neque omnis recusandae accusantium maxime aut necessitatibus iure modi hic.",
-                    videoPath: "/assets/videos/cinematik-1.mp4"
+                    videoPath: "/_nuxt/assets/videos/cinematik-1.mp4"
                 },
                 {
                     id: 6,
                     title: "Hallo World 6",
                     subTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, nostrum! Totam, perspiciatis laudantium esse sit culpa corporis porro accusantium. Cum consectetur tenetur tempore atque reprehenderit consequatur nesciunt unde architecto non.",
-                    videoPath: "/assets/videos/cinematik-2.mp4"
+                    videoPath: "/_nuxt/assets/videos/cinematik-2.mp4"
                 },
                 {
                     id: 7,
                     title: "Hallo World 7",
                     subTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque doloribus, sunt nobis iusto vero blanditiis deleniti impedit. Dicta, culpa, laborum voluptas dolorum molestias accusantium repellat quo dolor cupiditate fugit eos.",
-                    videoPath: "/assets/videos/cinematik-3.mp4"
+                    videoPath: "/_nuxt/assets/videos/cinematik-3.mp4"
                 },
                 {
                     id: 8,
                     title: "Hallo World 8",
                     subTitle: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, delectus odit dolorum velit voluptatum deleniti non itaque eius mollitia accusantium, odio molestiae quisquam illo maxime? Facilis, voluptas consectetur. Eius, amet?",
-                    videoPath: "/assets/videos/cinematik-4.mp4"
+                    videoPath: "/_nuxt/assets/videos/cinematik-4.mp4"
                 },
             ],
             title: 'Hallo World 1',
