@@ -9,8 +9,8 @@
 <template>
     <div class="container mx-auto lg:px-4 px-0">
         <div class="w-full h-screen flex justify-between lg:justify-center items-center gap-10 flex-col-reverse lg:flex-row">
-            <div class="w-full lg:w-1/3 flex items-center justify-end h-[600px] lg:h-full overflow-hidden pr-0 lg:pr-10">
-                <div class="w-fit relative">
+            <div class="w-full lg:w-1/3 flex items-center justify-end h-[600px] lg:h-full overflow-hidden px-0 lg:px-10">
+                <div class="w-screen lg:w-fit relative">
                     <video autoplay muted loop class="border-0 lg:border-[16px] border-white lg:rounded-3xl shadow-2xl lg:w-[300px] w-full">
                         <source src="@/assets/videos/hero-video.mp4" type="video/mp4"> 
                     </video>
@@ -33,7 +33,7 @@
             </div>
         </div>
     </div>
-    <div class="w-full bg-black">
+    <div class="w-full h-screen bg-black flex justify-center items-center">
         <div class="container mx-auto text-white px-4 py-20 flex justify-between flex-col lg:flex-row">
             <div class="w-full lg:w-2/4">
                 <span class="text-4xl" id="bold">What We Do</span>
@@ -69,67 +69,69 @@
             </div>
         </div>
     </div>
-    <div class="container mx-auto px-4 pt-28">
-        <p class="text-4xl text-center"  id="bold">How To Get Our Service</p>
-        <div class="grid grid-cols-1 lg:grid-cols-5 my-20">
-            <div class="group cursor-pointer mt-6 lg:mt-0">
-                <span class="text-6xl font-bold text-black lg:text-black/50 group-hover:text-black duration-300" id="number">1</span>
-                <div class="w-full bg-black lg:bg-black/50 group-hover:bg-black h-0.5 mt-4 duration-300"></div>
-                <div class="flex flex-col mt-4 pr-6">
-                    <span class="text-lg text-black lg:text-black/50 group-hover:text-black duration-300" id="bold">Lorem ipsum</span>
-                    <span class="text-sm mt-4 text-black/50 lg:text-black/50 group-hover:text-black duration-300" id="semibold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor et</span>
+    <div class="w-full h-auto lg:h-screen flex justify-center items-center">
+        <div class="container mx-auto px-4 pt-28">
+            <p class="text-4xl text-center"  id="bold">How To Get Our Service</p>
+            <div class="grid grid-cols-1 lg:grid-cols-5 my-20">
+                <div class="group cursor-pointer mt-6 lg:mt-0">
+                    <span class="text-6xl font-bold text-black lg:text-black/50 group-hover:text-black duration-300" id="number">1</span>
+                    <div class="w-full bg-black lg:bg-black/50 group-hover:bg-black h-0.5 mt-4 duration-300"></div>
+                    <div class="flex flex-col mt-4 pr-6">
+                        <span class="text-lg text-black lg:text-black/50 group-hover:text-black duration-300" id="bold">Lorem ipsum</span>
+                        <span class="text-sm mt-4 text-black/50 lg:text-black/50 group-hover:text-black duration-300" id="semibold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor et</span>
+                    </div>
                 </div>
-            </div>
-            <div class="group cursor-pointer mt-6 lg:mt-0">
-                <span class="text-6xl font-bold text-black lg:text-black/50 group-hover:text-black duration-300" id="number">2</span>
-                <div class="w-full bg-black lg:bg-black/50 group-hover:bg-black h-0.5 mt-4 duration-300"></div>
-                <div class="flex flex-col mt-4 pr-6">
-                    <span class="text-lg text-black lg:text-black/50 group-hover:text-black duration-300" id="bold">Lorem ipsum</span>
-                    <span class="text-sm mt-4 text-black/50 lg:text-black/50 group-hover:text-black duration-300" id="semibold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor et</span>
+                <div class="group cursor-pointer mt-6 lg:mt-0">
+                    <span class="text-6xl font-bold text-black lg:text-black/50 group-hover:text-black duration-300" id="number">2</span>
+                    <div class="w-full bg-black lg:bg-black/50 group-hover:bg-black h-0.5 mt-4 duration-300"></div>
+                    <div class="flex flex-col mt-4 pr-6">
+                        <span class="text-lg text-black lg:text-black/50 group-hover:text-black duration-300" id="bold">Lorem ipsum</span>
+                        <span class="text-sm mt-4 text-black/50 lg:text-black/50 group-hover:text-black duration-300" id="semibold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor et</span>
+                    </div>
                 </div>
-            </div>
-            <div class="group cursor-pointer mt-6 lg:mt-0">
-                <span class="text-6xl font-bold text-black lg:text-black/50 group-hover:text-black duration-300" id="number">3</span>
-                <div class="w-full bg-black lg:bg-black/50 group-hover:bg-black h-0.5 mt-4 duration-300"></div>
-                <div class="flex flex-col mt-4 pr-6">
-                    <span class="text-lg text-black lg:text-black/50 group-hover:text-black duration-300" id="bold">Lorem ipsum</span>
-                    <span class="text-sm mt-4 text-black/50 lg:text-black/50 group-hover:text-black duration-300" id="semibold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor et</span>
+                <div class="group cursor-pointer mt-6 lg:mt-0">
+                    <span class="text-6xl font-bold text-black lg:text-black/50 group-hover:text-black duration-300" id="number">3</span>
+                    <div class="w-full bg-black lg:bg-black/50 group-hover:bg-black h-0.5 mt-4 duration-300"></div>
+                    <div class="flex flex-col mt-4 pr-6">
+                        <span class="text-lg text-black lg:text-black/50 group-hover:text-black duration-300" id="bold">Lorem ipsum</span>
+                        <span class="text-sm mt-4 text-black/50 lg:text-black/50 group-hover:text-black duration-300" id="semibold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor et</span>
+                    </div>
                 </div>
-            </div>
-            <div class="group cursor-pointer mt-6 lg:mt-0">
-                <span class="text-6xl font-bold text-black lg:text-black/50 group-hover:text-black duration-300" id="number">4</span>
-                <div class="w-full bg-black lg:bg-black/50 group-hover:bg-black h-0.5 mt-4 duration-300"></div>
-                <div class="flex flex-col mt-4 pr-6">
-                    <span class="text-lg text-black lg:text-black/50 group-hover:text-black duration-300" id="bold">Lorem ipsum</span>
-                    <span class="text-sm mt-4 text-black/50 lg:text-black/50 group-hover:text-black duration-300" id="semibold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor et</span>
+                <div class="group cursor-pointer mt-6 lg:mt-0">
+                    <span class="text-6xl font-bold text-black lg:text-black/50 group-hover:text-black duration-300" id="number">4</span>
+                    <div class="w-full bg-black lg:bg-black/50 group-hover:bg-black h-0.5 mt-4 duration-300"></div>
+                    <div class="flex flex-col mt-4 pr-6">
+                        <span class="text-lg text-black lg:text-black/50 group-hover:text-black duration-300" id="bold">Lorem ipsum</span>
+                        <span class="text-sm mt-4 text-black/50 lg:text-black/50 group-hover:text-black duration-300" id="semibold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor et</span>
+                    </div>
                 </div>
-            </div>
-            <div class="group cursor-pointer mt-6 lg:mt-0">
-                <span class="text-6xl font-bold text-black lg:text-black/50 group-hover:text-black duration-300" id="number">5</span>
-                <div class="w-full bg-black lg:bg-black/50 group-hover:bg-black h-0.5 mt-4 duration-300"></div>
-                <div class="flex flex-col mt-4 pr-6">
-                    <span class="text-lg text-black lg:text-black/50 group-hover:text-black duration-300" id="bold">Lorem ipsum</span>
-                    <span class="text-sm mt-4 text-black/50 lg:text-black/50 group-hover:text-black duration-300" id="semibold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor et</span>
+                <div class="group cursor-pointer mt-6 lg:mt-0">
+                    <span class="text-6xl font-bold text-black lg:text-black/50 group-hover:text-black duration-300" id="number">5</span>
+                    <div class="w-full bg-black lg:bg-black/50 group-hover:bg-black h-0.5 mt-4 duration-300"></div>
+                    <div class="flex flex-col mt-4 pr-6">
+                        <span class="text-lg text-black lg:text-black/50 group-hover:text-black duration-300" id="bold">Lorem ipsum</span>
+                        <span class="text-sm mt-4 text-black/50 lg:text-black/50 group-hover:text-black duration-300" id="semibold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor et</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="pt-28 px-4 container mx-auto">
-        <div class="flex justify-between gap-10 flex-col lg:flex-row">
+    <div class="py-28 px-4 bg-black text-white h-auto lg:h-screen flex justify-center items-center">
+        <div class="flex justify-center gap-10 flex-col lg:flex-row container mx-auto">
             <div class="w-full lg:w-2/4">
                 <p class="text-4xl"  id="bold">Our Partner</p>
-                <div class="w-full bg-black h-0.5 my-4"></div>
+                <div class="w-full bg-white h-0.5 my-4"></div>
                 <div class="overflow-y-auto h-auto lg:h-96 w-full">
                     <div class="w-full py-6 lg:py-3 relative cursor-pointer" v-for="(dataPartner, index) in partner" :key="index" @click="handleChangePartner(index + 1)">
                         <div class="flex justify-between items-center">
-                            <span class="text-xl lg:text-base" :class="{ 'bold text-black' : index + 1 == partnerView, 'text-black/50' : index + 1 != partnerView }">{{ dataPartner.title }}</span>
-                            <img src="@/assets/images/icon-arrow-black.svg" :class="{ 'block' : index + 1 == partnerView, 'hidden' : index + 1 != partnerView }" class="rotate-90 lg:rotate-0" />
+                            <span class="text-xl lg:text-base" :class="{ 'bold text-white' : index + 1 == partnerView, 'text-white/50' : index + 1 != partnerView }">{{ dataPartner.title }}</span>
+                            <img src="@/assets/images/icon-arrow.svg" :class="{ 'block' : index + 1 == partnerView, 'hidden' : index + 1 != partnerView }" class="rotate-90 lg:rotate-0" />
                         </div>
-                        <div class="w-full h-0.5 bg-black absolute bottom-0" :class="{ 'block' : index + 1 == partnerView, 'hidden' : index + 1 != partnerView }"></div>
+                        <div class="w-full h-0.5 bg-white absolute bottom-0" :class="{ 'block' : index + 1 == partnerView, 'hidden' : index + 1 != partnerView }"></div>
                         <div class="block lg:hidden">
                             <div class="flex flex-col mt-4 transition-all duration-500" :class="{'block h-auto' : index + 1 == partnerView, 'hidden h-0' : index + 1 != partnerView}">
-                                <span class="italic text-black/50" id="semibold">"{{ comentar }}"</span>
-                                <span class="text-black/50 mt-4" id="bold">{{ date }}</span>
+                                <span class="italic text-white/50" id="semibold">"{{ comentar }}"</span>
+                                <span class="text-white/50 mt-4" id="bold">{{ date }}</span>
                             </div>
                         </div>
                     </div>
@@ -137,10 +139,10 @@
             </div>
             <div class="w-2/4 hidden lg:block">
                 <p class="text-4xl" id="bold">Their Comments</p>
-                <div class="w-full bg-black h-0.5 my-4"></div>
+                <div class="w-full bg-white h-0.5 my-4"></div>
                 <div class="overflow-y-auto h-96 w-full text-sm flex flex-col">
-                    <span class="italic text-black/50" id="semibold">"{{ comentar }}"</span>
-                    <span class="text-black/50 mt-4" id="bold">{{ date }}</span>
+                    <span class="italic text-white/50" id="semibold">"{{ comentar }}"</span>
+                    <span class="text-white/50 mt-4" id="bold">{{ date }}</span>
                 </div>
             </div>
         </div>
