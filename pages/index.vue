@@ -115,21 +115,27 @@
         </div>
     </div>
     <div class="pt-28 px-4 container mx-auto">
-        <div class="flex justify-between gap-10">
-            <div class="w-2/4">
+        <div class="flex justify-between gap-10 flex-col lg:flex-row">
+            <div class="w-full lg:w-2/4">
                 <p class="text-4xl"  id="bold">Our Partner</p>
                 <div class="w-full bg-black h-0.5 my-4"></div>
-                <div class="overflow-y-auto h-96 w-full">
+                <div class="overflow-y-auto h-auto lg:h-96 w-full">
                     <div class="w-full py-3 relative cursor-pointer" v-for="(dataPartner, index) in partner" :key="index" @click="handleChangePartner(index + 1)">
                         <div class="flex justify-between items-center">
                             <span :class="{ 'semibold' : index + 1 == partnerView, '' : index + 1 != partnerView }">{{ dataPartner.title }}</span>
-                            <img src="@/assets/images/icon-arrow-black.svg" :class="{ 'block' : index + 1 == partnerView, 'hidden' : index + 1 != partnerView }" />
+                            <img src="@/assets/images/icon-arrow-black.svg" :class="{ 'block' : index + 1 == partnerView, 'hidden' : index + 1 != partnerView }" class="rotate-90 lg:rotate-0" />
                         </div>
                         <div class="w-full h-0.5 bg-black absolute bottom-0" :class="{ 'block' : index + 1 == partnerView, 'hidden' : index + 1 != partnerView }"></div>
+                        <div class="block lg:hidden">
+                            <div class="flex flex-col mt-2" :class="{'block' : index + 1 == partnerView, 'hidden' : index + 1 != partnerView}">
+                                <span>{{ comentar }}</span>
+                                <span class="text-black/50 mt-4" id="bold">{{ date }}</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="w-2/4">
+            <div class="w-2/4 hidden lg:block">
                 <p class="text-4xl" id="bold">Their Comments</p>
                 <div class="w-full bg-black h-0.5 my-4"></div>
                 <div class="overflow-y-auto h-96 w-full text-sm flex flex-col">
