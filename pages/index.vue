@@ -61,8 +61,8 @@
             <div class="gap-6 mt-8 lg:mt-0 hidden lg:block">
                 <div class="flex items-center gap-4">
                     <div class="w-fit relative">
-                        <video autoplay loop class="shadow-2xl lg:w-[700px] w-full" ref="videoPlayer" muted>
-                            <source :src="video" type="video/mp4"> 
+                        <video autoplay muted loop class="border-0 lg:border-[16px] border-white lg:rounded-3xl shadow-2xl lg:w-[300px] w-full rounded-none">
+                            <source src="@/assets/videos/hero-video.mp4" type="video/mp4"> 
                         </video>
                     </div>
                 </div>
