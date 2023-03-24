@@ -1,5 +1,5 @@
 <template>
-    <div class="pt-28">
+    <div class="pt-28 mb-28">
         <div class="container mx-auto px-4">
             <div class="w-fit relative mb-8">
                 <span class="text-4xl" id="bold">Our Last Project</span>

@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full bg-black mt-20 px-4">
+    <div class="w-full bg-black px-4 border-t-2 border-white">
         <div class="container mx-auto grid grid-cols-1 lg:grid-cols-4 gap-10 text-[#f5f5f5] py-10">
             <div class="w-full flex flex-col">
                 <span class="text-lg" id="bold">LOREM IPSUM DOLOR SIT AMET <span class="text-[#f34539]">CONSECTETUR ADIPISICING</span> ELIT. OFFICIIS QUASI QUAS NIHIL</span>

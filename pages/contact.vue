@@ -1,5 +1,5 @@
 <template>
-    <div class="container mx-auto px-4 pt-28">
+    <div class="container mx-auto px-4 pt-28 mb-28">
         <div class="flex justify-center">
             <span class="text-center text-4xl" id="bold">Talk With Us</span>
         </div>

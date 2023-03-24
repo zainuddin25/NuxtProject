@@ -7,7 +7,7 @@
 </style>
 
 <template>
-    <div class="container mx-auto lg:px-4 px-0">
+    <div class="container mx-auto lg:px-4 px-0 pt-0 lg:pt-10 ">
         <div class="w-full h-screen flex justify-between lg:justify-center items-center gap-10 flex-col-reverse lg:flex-row">
             <div class="w-full lg:w-1/3 flex items-center justify-end h-[600px] lg:h-full overflow-hidden px-0 lg:px-10">
                 <div class="w-screen lg:w-fit relative">
@@ -23,12 +23,10 @@
             <div class="w-full lg:w-1/3 flex flex-col pt-28 lg:pt-0 px-4 lg:px-0">
                 <span id="bold">Hallo Welcome To The <span class="text-[#f34539]">ZaanBasyar</span></span>
                 <Typewriter class="py-4 lg:py-8" />
-                <div class="relative w-fit group">
-                    <button class="px-10 py-4 text-[#f34539]" id="semibold">Lets Talk</button>
-                    <div class="absolute top-0 left-0 w-[5px] h-[5px] bg-[#f34539] group-hover:w-full duration-300"></div>
-                    <div class="absolute top-0 left-0 w-[5px] h-[5px] bg-[#f34539] group-hover:h-full duration-300"></div>
-                    <div class="absolute bottom-0 right-0 w-[5px] h-[5px] bg-[#f34539] group-hover:w-full duration-300"></div>
-                    <div class="absolute bottom-0 right-0 w-[5px] h-[5px] bg-[#f34539] group-hover:h-full duration-300"></div>
+                <div class="mt-4">
+                    <NuxtLink to="/contact">
+                        <button class="border-[3px] border-black px-8 py-4 hover:bg-black hover:text-white text-black duration-200" id="semibold">Lets Talk With Us</button>
+                    </NuxtLink>
                 </div>
             </div>
         </div>
@@ -49,19 +47,17 @@
                 <div class="flex flex-col mt-6">
                     <span class="text-4xl text-[#f34539]" id="bold">{{ title }}</span>
                     <span class="my-4 text-white/50">{{ subTitle }}</span>
-                    <div class="relative w-fit group mt-4">
-                        <button class="px-10 py-4 text-white" id="semibold">Go To</button>
-                        <div class="absolute top-0 left-0 w-[5px] h-[5px] bg-white group-hover:w-full duration-300"></div>
-                        <div class="absolute top-0 left-0 w-[5px] h-[5px] bg-white group-hover:h-full duration-300"></div>
-                        <div class="absolute bottom-0 right-0 w-[5px] h-[5px] bg-white group-hover:w-full duration-300"></div>
-                        <div class="absolute bottom-0 right-0 w-[5px] h-[5px] bg-white group-hover:h-full duration-300"></div>
+                    <div>
+                        <NuxtLink to="/contact">
+                            <button class="border-[3px] border-wahite px-8 py-4 hover:bg-white hover:text-black text-white duration-200" id="semibold">Lets Talk With Us</button>
+                        </NuxtLink>
                     </div>
                 </div>
             </div>
             <div class="gap-6 mt-8 lg:mt-0 hidden lg:block">
                 <div class="flex items-center gap-4">
                     <div class="w-fit relative">
-                        <video autoplay loop class="shadow-2xl lg:w-[700px] w-full" ref="videoPlayer" muted>
+                        <video autoplay loop class="shadow-2xl lg:w-[700px] w-full rounded-md" ref="videoPlayer" muted>
                             <source :src="video" type="video/mp4"> 
                         </video>
                     </div>
@@ -72,42 +68,50 @@
     <div class="w-full h-auto lg:h-screen flex justify-center items-center flex-col pt-20">
         <span class="text-4xl" id="bold">Refrences</span>
         <div class="flex justify-center items-center gap-0 lg:gap-10 w-full lg:w-2/3 flex-col lg:flex-row my-8">
+            
             <NuxtLink to="/work">
-                <div class="w-full lg:w-fit relative my-4 lg:my-0 hover:scale-105 duration-300 cursor-pointer">
-                    <video autoplay muted loop class="border-0 lg:border-[16px] border-white lg:rounded-3xl shadow-2xl lg:w-[300px] w-full rounded-none">
-                        <source src="@/assets/videos/hero-video.mp4" type="video/mp4"> 
-                    </video>
-                    <div class="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-0 left-0 lg:border-[16px] rounded-none border-white lg:rounded-3xl flex items-end justify-center">
-                        <div class="text-white mb-4">
-                            <span>2D Art</span>
+                <div class="w-full lg:w-fit relative my-8 lg:my-0 hover:scale-105 duration-300 cursor-pointer">
+                    <div class="w-3/4 lg:w-full h-fit mx-auto relative">
+                        <video autoplay muted loop class="border-[16px] border-white rounded-3xl shadow-2xl lg:w-[300px] w-full mx-auto">
+                            <source src="@/assets/videos/hero-video.mp4" type="video/mp4"> 
+                        </video>
+                        <div class="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-0 left-0 border-[16px] border-white rounded-3xl flex items-end justify-center">
+                            <div class="text-white mb-4">
+                                <span>2D Art</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </NuxtLink>
             <NuxtLink to="/work">
-                <div class="w-full lg:w-fit relative my-4 lg:my-0 hover:scale-105 duration-300 cursor-pointer">
-                    <video autoplay muted loop class="border-0 lg:border-[16px] border-white lg:rounded-3xl shadow-2xl lg:w-[300px] w-full rounded-none">
-                        <source src="@/assets/videos/hero-video.mp4" type="video/mp4"> 
-                    </video>
-                    <div class="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-0 left-0 lg:border-[16px] rounded-none border-white lg:rounded-3xl flex items-end justify-center">
-                        <div class="text-white mb-4">
-                            <span>2D Art</span>
+                <div class="w-full lg:w-fit relative my-8 lg:my-0 hover:scale-105 duration-300 cursor-pointer">
+                    <div class="w-3/4 lg:w-full h-fit mx-auto relative">
+                        <video autoplay muted loop class="border-[16px] border-white rounded-3xl shadow-2xl lg:w-[300px] w-full mx-auto">
+                            <source src="@/assets/videos/hero-video.mp4" type="video/mp4"> 
+                        </video>
+                        <div class="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-0 left-0 border-[16px] border-white rounded-3xl flex items-end justify-center">
+                            <div class="text-white mb-4">
+                                <span>2D Art</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </NuxtLink>
             <NuxtLink to="/work">
-                <div class="w-full lg:w-fit relative my-4 lg:my-0 hover:scale-105 duration-300 cursor-pointer">
-                    <video autoplay muted loop class="border-0 lg:border-[16px] border-white lg:rounded-3xl shadow-2xl lg:w-[300px] w-full rounded-none">
-                        <source src="@/assets/videos/hero-video.mp4" type="video/mp4"> 
-                    </video>
-                    <div class="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-0 left-0 lg:border-[16px] rounded-none border-white lg:rounded-3xl flex items-end justify-center">
-                        <div class="text-white mb-4">
-                            <span>2D Art</span>
+                <div class="w-full lg:w-fit relative my-8 lg:my-0 hover:scale-105 duration-300 cursor-pointer">
+                    <div class="w-3/4 lg:w-full h-fit mx-auto relative">
+                        <video autoplay muted loop class="border-[16px] border-white rounded-3xl shadow-2xl lg:w-[300px] w-full mx-auto">
+                            <source src="@/assets/videos/hero-video.mp4" type="video/mp4"> 
+                        </video>
+                        <div class="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-0 left-0 border-[16px] border-white rounded-3xl flex items-end justify-center">
+                            <div class="text-white mb-4">
+                                <span>2D Art</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </NuxtLink>
+            
         </div>
         <div class="">
              <div class="relative w-fit group">
@@ -121,8 +125,8 @@
             </div>
         </div>
     </div>
-    <div class="w-full h-auto lg:h-screen flex justify-center items-center">
-        <div class="container mx-auto px-4 pt-28">
+    <div class="w-full px-4 h-auto lg:h-screen flex justify-center items-center">
+        <div class="container mx-auto pt-28">
             <p class="text-4xl text-center"  id="bold">How To Get Our Service</p>
             <div class="grid grid-cols-1 lg:grid-cols-5 my-20">
                 <div class="group cursor-pointer mt-6 lg:mt-0">

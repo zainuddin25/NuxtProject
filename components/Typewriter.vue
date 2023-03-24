@@ -15,8 +15,8 @@
 </style>
 
 <template>
-    <div class="typewriter">
-      <span ref="typewriterText" class="text-6xl" id="extrabold">Hello We Are <br> <span class=" text-[#f34539] underline-offset-8 underline">{{ currentText }}</span></span>
+    <div>
+      <span class="text-6xl" id="extrabold">Hello We Are <br> <span class=" text-[#f34539] underline-offset-8 underline typewriter" ref="typewriterText">{{ currentText }}</span></span>
     </div>
   </template>
   

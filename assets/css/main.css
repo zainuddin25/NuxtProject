@@ -112,5 +112,5 @@ body {
 #hero {
     background-image: url('../images/background.svg');
     background-size: cover;
-  background-position: center center;
+    background-position: center center;
 }
