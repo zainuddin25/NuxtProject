@@ -58,7 +58,7 @@
                     </div>
                 </div>
             </div>
-            <div class="gap-6 mt-8 lg:mt-0">
+            <div class="gap-6 mt-8 lg:mt-0 hidden lg:block">
                 <div class="flex items-center gap-4">
                     <div class="w-fit relative">
                         <video autoplay loop class="shadow-2xl lg:w-[700px] w-full" ref="videoPlayer" muted>
@@ -120,15 +120,15 @@
                 <p class="text-4xl"  id="bold">Our Partner</p>
                 <div class="w-full bg-black h-0.5 my-4"></div>
                 <div class="overflow-y-auto h-auto lg:h-96 w-full">
-                    <div class="w-full py-6 relative cursor-pointer" v-for="(dataPartner, index) in partner" :key="index" @click="handleChangePartner(index + 1)">
+                    <div class="w-full py-6 lg:py-3 relative cursor-pointer" v-for="(dataPartner, index) in partner" :key="index" @click="handleChangePartner(index + 1)">
                         <div class="flex justify-between items-center">
-                            <span :class="{ 'semibold' : index + 1 == partnerView, '' : index + 1 != partnerView }">{{ dataPartner.title }}</span>
+                            <span class="text-xl lg:text-base" :class="{ 'bold text-black' : index + 1 == partnerView, 'text-black/50' : index + 1 != partnerView }">{{ dataPartner.title }}</span>
                             <img src="@/assets/images/icon-arrow-black.svg" :class="{ 'block' : index + 1 == partnerView, 'hidden' : index + 1 != partnerView }" class="rotate-90 lg:rotate-0" />
                         </div>
                         <div class="w-full h-0.5 bg-black absolute bottom-0" :class="{ 'block' : index + 1 == partnerView, 'hidden' : index + 1 != partnerView }"></div>
                         <div class="block lg:hidden">
                             <div class="flex flex-col mt-4 transition-all duration-500" :class="{'block h-auto' : index + 1 == partnerView, 'hidden h-0' : index + 1 != partnerView}">
-                                <span>{{ comentar }}</span>
+                                <span class="italic text-black/50" id="semibold">"{{ comentar }}"</span>
                                 <span class="text-black/50 mt-4" id="bold">{{ date }}</span>
                             </div>
                         </div>
@@ -139,9 +139,7 @@
                 <p class="text-4xl" id="bold">Their Comments</p>
                 <div class="w-full bg-black h-0.5 my-4"></div>
                 <div class="overflow-y-auto h-96 w-full text-sm flex flex-col">
-                    <span>
-                        {{ comentar }}
-                    </span>
+                    <span class="italic text-black/50" id="semibold">"{{ comentar }}"</span>
                     <span class="text-black/50 mt-4" id="bold">{{ date }}</span>
                 </div>
             </div>
@@ -219,6 +217,18 @@ export default ({
                 },
                 {
                     id: 2,
+                    title: 'Partner Name',
+                    commentar: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
+                    date: '24 Marth 2023'
+                },
+                {
+                    id: 3,
+                    title: 'Partner Name',
+                    commentar: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.  Ad, facere. Nulla hic magni nam adipisci accusamus optio sed quia impedit distinctio provident, quae autem non officia esse vel incidunt harum?',
+                    date: '23 Marth 2023'
+                },
+                {
+                    id: 4,
                     title: 'Partner Name',
                     commentar: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
                     date: '24 Marth 2023'
