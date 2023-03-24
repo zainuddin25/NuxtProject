@@ -13,10 +13,10 @@
                 </div>
             </div>
             <textarea class="mt-4 lg:mt-10 w-full h-96 p-4 outline-none rounded-md" placeholder="Your Message"></textarea>
-            <div class="w-full lg:w-[20%] mx-auto mt-4 lg:mt-10">
-                <button class="w-full border-2 border-[#f34539] py-4 rounded-lg text-[#f34539]">
-                    Send Message
-                </button>
+            <div class="w-full flex justify-center items-center mt-6">
+                <NuxtLink to="/contact">
+                    <button class="border-[3px] border-black px-8 py-4 hover:bg-black hover:text-white text-black duration-200" id="semibold">Lets Talk With Us</button>
+                </NuxtLink>
             </div>
         </div>
     </div>

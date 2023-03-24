@@ -114,14 +114,10 @@
             
         </div>
         <div class="">
-             <div class="relative w-fit group">
-                <NuxtLink to="/work">
-                    <button class="px-10 py-4 text-[#f34539]" id="semibold">Lets Talk</button>
+            <div>
+                <NuxtLink to="/contact">
+                    <button class="border-[3px] border-black px-8 py-4 hover:bg-black hover:text-white text-black duration-200" id="semibold">Lets Talk With Us</button>
                 </NuxtLink>
-                <div class="absolute top-0 left-0 w-[5px] h-[5px] bg-[#f34539] group-hover:w-full duration-300"></div>
-                <div class="absolute top-0 left-0 w-[5px] h-[5px] bg-[#f34539] group-hover:h-full duration-300"></div>
-                <div class="absolute bottom-0 right-0 w-[5px] h-[5px] bg-[#f34539] group-hover:w-full duration-300"></div>
-                <div class="absolute bottom-0 right-0 w-[5px] h-[5px] bg-[#f34539] group-hover:h-full duration-300"></div>
             </div>
         </div>
     </div>
